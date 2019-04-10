@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ICND1 Study Guide</title>
+  </head>
+  <body>
+    <h1><a href="https://learningnetwork.cisco.com/community/certifications/ccna/icnd1/exam-topics">ICND1 Study Guide</a></h1>
+    <h2>1.0 Network Fundamentals</h2>
+    <h3>1.1 Compare and contrast OSI and TCP/IP models</h3>
+    <a href="https://docs.oracle.com/cd/E19683-01/806-4075/ipov-10/">https://docs.oracle.com/cd/E19683-01/806-4075/ipov-10/</a>
+    <table border="1">
+      <thead>
+        <th>OSI Number</th>
+        <th>OSI Name</th>
+        <th>TCP/IP Layer</th>
+        <th>Examples</th>
+      </thead>
+      <tr>
+        <td>5,6,7</td>
+        <td>Application, session, presentation</td>
+        <td>Application</td>
+        <td>NFS, DNS, telnet, ftp, RIP, SNMP</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Transport</td>
+        <td>Transport</td>
+        <td>TCP, UDP</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Network</td>
+        <td>Internet</td>
+        <td>IP, ICMP, ARP</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Data Link</td>
+        <td>Data Link</td>
+        <td>IEEE 802.2, PPP</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Physical</td>
+        <td>Physical</td>
+        <td>Ethernet (IEEE 802.3), RS-232</td>
+      </tr>
+    </table>
+    <ul>
+      <li><h3>Physical Layer</h3>Specifies hardware and signalling characteristics of network media such as materials, electrical or RF characteristics, interfaces, etc.</li>
+      <li><h3>Data Link Layer</h3>Performs framing of network data to be transmitted, identifying the protocol type of the packet and providing error control.</li>
+      <li><h3>Internet Layer</h3>Maintains knowledge of network topography and adds source and destination network information (datagram header) to packet for delivery over remote links</li>
+      <li><h3>Transport Layer</h3>Prepends segment header data to packet to multiplex sessions or virtual circuits i.e. TCP or UDP port numbers</li>
+      <li><h3>Application Layer</h3>Provides services to user and system applications necessary to access or troubleshoot the network</li>
+    </ul>
+    <h3>1.2 Compare and contrast TCP and UDP protocols</h3>
+    <a href="https://en.wikibooks.org/wiki/Communication_Networks/TCP_and_UDP_Protocols">https://en.wikibooks.org/wiki/Communication_Networks/TCP_and_UDP_Protocols</a>
+    <ul>
+      <li>
+        <h4>TCP</h4>
+        <ul>
+          <li>Connection-oriented</li>
+          <li>Complex</li>
+          <li>Reliable</li>
+          <li>Bidirectional (Full-Duplex)</li>
+          <li>Retransmission</li>
+          <li>Sequencing</li>
+          <li>Rate adaptation</li>
+        </ul>
+      </li>
+      <li>
+        <h4>UDP</h4>
+        <ul>
+          <li>Connectionless</li>
+          <li>Unreliable</li>
+          <li>Fast</li>
+          <li>Simple</li>
+          <li>No retransmissions or flow control</li>
+          <li>Data sent as discrete messagess with no sequencing information provided by protocol</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>1.3 Describe the impact of infrastructure components in an enterprise network</h3>
+    <ul>
+      <li><h4>1.3.a Firewalls</h4></li>
+        <ul>
+          <li>Filter traffic to and from unknown networks based on rules such as ip addresses and port numbers</li>
+          <li>May be stateful or stateless, inspecting, and operate at different layers</li>
+          <li>Historically often implemented at routers/network boundaries</li>
+        </ul>
+      <li><h4>1.3.b Access points</h4></li>
+        <ul>
+          <li>Wireless host network access</li>
+          <li>May be autonomous or connected to a controller</li>
+        </ul>
+      <li><h4>1.3.c Wireless controllers</h4></li>
+        <ul>
+          <li>Coordinate access points for extended wireless networking</li>
+        </ul>
+      </ul>
+    <h3>1.4 Compare and contrast collapsed core and three-tier architectures</h3>
+  </body>
+</html>
