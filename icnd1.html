@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>ICND1 Study Guide</title>
+    <link rel="stylesheet" type="text/css" href="master.css">
   </head>
   <body>
     <h1><a href="https://learningnetwork.cisco.com/community/certifications/ccna/icnd1/exam-topics">ICND1 Study Guide</a></h1>
     <h2>1.0 Network Fundamentals</h2>
     <h3>1.1 Compare and contrast OSI and TCP/IP models</h3>
     <a href="https://docs.oracle.com/cd/E19683-01/806-4075/ipov-10/">https://docs.oracle.com/cd/E19683-01/806-4075/ipov-10/</a>
-    <table border="1">
+    <table>
       <thead>
         <th>OSI Number</th>
         <th>OSI Name</th>
@@ -100,5 +101,101 @@
         </ul>
       </ul>
     <h3>1.4 Compare and contrast collapsed core and three-tier architectures</h3>
+    <a href="http://www.ciscopress.com/articles/article.asp?p=2202410&seqNum=4">http://www.ciscopress.com/articles/article.asp?p=2202410&seqNum=4</a>
+    <ul>
+      <li><h4>Three-tier architecture</h4>
+        <ul>
+          <li>Access layer</li>
+          <li>Distribution layer</li>
+          <li>Core layer</li>
+        </ul>
+      </li>
+      <li><h4>Collapsed core architecture</h4>
+        <ul>
+          <li>Access layer</li>
+          <li>Distribution and core layer implemented together</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>1.5 Compare and contrast network topologies</h3>
+    <ul>
+      <li><h4>1.5.a Star</h4>
+        <ul>
+          <li>Devices connect to central hub</li>
+          <li>Failure domain limited to each link</li>
+        </ul>
+      </li>
+      <li><h4>1.5.b Mesh</h4>
+        <ul>
+          <li>Each device has a connection to every other device</li>
+          <li>Full redundancy</li>
+          <li>Expense and complexity rise geometrically</li>
+        </ul>
+      </li>
+      <li><h4>1.5.c Hybrid</h4>
+        <ul>
+          <li>Combination of approaches</li>
+          <li>Maximize strengths of each, minimize drawbacks of each</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>1.6 Select the appropriate cabling type based on implementation requirements</h3>
+    <a href="https://www.dummies.com/programming/certification/network-cabling-for-the-cisco-icnd1-certification-exam/">https://www.dummies.com/programming/certification/network-cabling-for-the-cisco-icnd1-certification-exam/</a>
+    <ul>
+      <li><h4>Twisted-Pair</h4>
+        <ul>
+          <li>Straight</li>
+          <li>Crossover</li>
+          <li>Rolled</li>
+        </ul>
+      </li>
+      <li><h4>RS-232</h4>
+        <ul>
+          <li>DTE</li>
+          <li>DCE</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>1.7 Apply troubleshooting methodologies to resolve problems</h3>
+    <ul class="tbd">
+      <li><h4>1.7.a Perform fault isolation and document</h4></li>
+      <li><h4>1.7.b Resolve or escalate</h4></li>
+      <li><h4>1.7.c Verify and monitor resolution</h4></li>
+    </ul>
+    <h3>1.8 Configure, verify, and troubleshoot IPv4 addressing and subnetting</h3>
+    <div>
+      <a href="http://www.pearsonitcertification.com/articles/article.aspx?p=2168927&seqNum=5">http://www.pearsonitcertification.com/articles/article.aspx?p=2168927&seqNum=5</a>
+    </div>
+    <table>
+      <thead>
+        <a href="http://ptgmedia.pearsoncmg.com/images/chap3_9780789751508/elementLinks/03fig10_alt.jpg">Subnetting Chart</a>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Increment</td><td>32768<br>128</td><td>16384<br>64</td><td>8192<br>32</td><td>4096<br>16</td><td>2048<br>8</td><td>1024<br>4</td><td>512<br>2</td><td>256<br>1</td><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>
+        </tr>
+        <tr>
+          <td>CIDR</td><td>/17</td><td>/18</td><td>/19</td><td>/20</td><td>/21</td><td>/22</td><td>/23</td><td>/24</td><td>/25</td><td>/26</td><td>/27</td><td>/28</td><td>/29</td><td>/30</td><td>/31</td><td>/32</td>
+        </tr>
+        <tr>
+          <td>Mask</td><td>128</td><td>192</td><td>224</td><td>240</td><td>248</td><td>252</td><td>254</td><td>255</td><td>128</td><td>192</td><td>224</td><td>240</td><td>248</td><td>252</td><td>254</td><td>255</td>
+        </tr>
+        <tr>
+          <td>Hosts</td><td>32766</td><td>16382</td><td>8190</td><td>4094</td><td>2046</td><td>1022</td><td>510</td><td>254</td><td>126</td><td>62</td><td>30</td><td>14</td><td>6</td><td>2</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>B-subnet</td><td>2</td><td>4</td><td>8</td><td>16</td><td>32</td><td>64</td><td>128</td><td>256</td><td>512</td><td>1024</td><td>2048</td><td>4096</td><td>8192</td><td>16384</td><td>~</td><td>~</td>
+        </tr>
+        <tr>
+          <td>C-subnet</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>4</td><td>8</td><td>16</td><td>32</td><td>64</td><td>~</td><td>~</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>1.9 Compare and contrast IPv4 address types</h3>
+    <ul>
+      <li><h4>1.9.a Unicast</h4></li>
+      <li><h4>1.9.b Broadcast</h4></li>
+      <li><h4>1.9.c Multicast</h4></li>
+    </ul>
   </body>
 </html>
